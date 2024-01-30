@@ -24,7 +24,8 @@
                     <h3 class="title has-text-grey"><a href="https://youtube.com/canaltioficial" target="_blank">Canal TI</a></h3>
                     
                     <?php
-                       if($_SESSION['status_cadastro'] == TRUE):  
+                       //if($_SESSION['status_cadastro'] == TRUE):                          
+                        if(isset($_SESSION['status_cadastro']) && $_SESSION['status_cadastro'] == TRUE):                       
                     ?>
                   
                     <div class="notification is-success">
@@ -37,9 +38,8 @@
                        unset($_SESSION['status_cadastro'])
                     ?>
 
-
-                    <?php
-                       if($_SESSION['usuario_existe']):  
+                    <?php                       
+                       if(isset($_SESSION['usuario_existe']) && $_SESSION['usuario_existe'] == TRUE):  
                     ?>
 
                     <div class="notification is-info">
@@ -49,8 +49,6 @@
                        endif;
                        unset($_SESSION['usuario_existe'])
                     ?>
-
-
 
                     <div class="box">
                         <form action="cadastrar.php" method="POST">
@@ -67,6 +65,14 @@
                             <div class="field">
                                 <div class="control">
                                     <input name="senha" class="input is-large" type="password" placeholder="Senha">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <select id="perfil" name="perfil">
+                                        <option value="admin">Admin</option>
+                                        <option value="usuario">Usuário</option>
+                                    </select>
                                 </div>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
