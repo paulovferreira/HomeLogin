@@ -1,0 +1,99 @@
+html,body {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.hero.is-success {
+  background: #f2f7fa;
+}
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+
+.fundo{
+  background-color: #f2f7fa;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% da altura da viewport */
+  width: 1000px;
+  border-radius: 20%;
+}
+
+.subdiv1,
+.subdiv2 {
+  border: 1px solid #ccc;
+  box-sizing: border-box;  
+  height: 300px;
+  background-color: white;
+}
+
+.subdiv1 {
+  width: 60%;
+  text-align: center;
+}
+
+.imagem {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.subdiv2 {
+  width: 40%;
+  text-align: center;
+}
+
+.modern-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #3498db; /* Cor de fundo do botão */
+  transition: background-color 0.3s ease;
+}
+
+.modern-button:hover {
+  background-color: #2980b9; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.highlight-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #e74c3c; /* Cor de fundo do botão de destaque */
+  margin-top: 20px; /* Espaçamento superior para separar os botões */
+  transition: background-color 0.3s ease;
+}
+
+.highlight-button:hover {
+  background-color: #c0392b; /* Cor de fundo do botão de destaque ao passar o mouse */
+}
