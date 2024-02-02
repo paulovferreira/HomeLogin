@@ -14,7 +14,7 @@ include('verifica_login.php');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistema de Login - PHP + MySQL - Canal TI</title>
+    <title>Controle de Acesso</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="css/painel.css">
 </head>
@@ -52,12 +52,13 @@ include('verifica_login.php');
             endif;
         ?>                                     
 
-            <a class="highlight-button" href="cadastro.php">Cadastrar novo usuário</a>
+            
+            <a class="modern-button" href="https://lojaintegrada.com.br/">Acessar Loja Virtual</a>
             <br>
             <?php
                 if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'ADMIN'):
             ?>                
-            <a class="modern-button" href="https://lojaintegrada.com.br/">Acessar Loja Virtual</a>
+               <a class="highlight-button" href="cadastro.php">Cadastrar novo usuário</a>
             <?php
                 endif;
             ?>
