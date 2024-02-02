@@ -1,51 +1,31 @@
 html,body {
-  font-family: 'Open Sans', serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-family: 'Open Sans', serif; 
+  font-weight: 300;  
+  margin: 0;
+  padding: 0;
 }
+
 .hero.is-success {
   background: #f2f7fa;
 }
+
 .hero .nav, .hero.is-success .nav {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+h1{
+  font-size: 16px;  
+}
+
 input {
   font-weight: 300;
 }
 p {
   font-weight: 700;
-}
-
-.fundo{
-  background-color: #f2f7fa;;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* 100% da altura da viewport */
-  width: 1000px;
-  border-radius: 20%;
-}
-
-.subdiv1,
-.subdiv2 {
-  border: 1px solid #ccc;
-  box-sizing: border-box;  
-  height: 300px;
-  background-color: white;
-}
-
-.subdiv1 {
-  width: 60%;
-  text-align: center;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .imagem {
@@ -54,14 +34,48 @@ p {
   object-fit: cover; 
 }
 
-.subdiv2 {
-  width: 40%;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh; 
+  width: 100%; 
+  background-image: url('../img/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+
+.overlay {
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, #3498db, #2980b9); /* Cores de exemplo, substitua pelos tons desejados */
+  opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+  z-index: 1; /* Coloca o overlay acima do conteúdo da div .maria */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+.subdiv1 {
+  border: 1px solid #ccc;
+  box-sizing: border-box;  
+  height: 300px;
+  background-color: white;
+  width: 35%;
   text-align: center;
+  border-radius: 15px;
 }
 
 .modern-button {
   display: inline-block;
   padding: 15px 30px;
+  margin: 10px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
