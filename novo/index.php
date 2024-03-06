@@ -47,6 +47,7 @@ session_start();
 
                           
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
+                            <a class="highlight-button" href="cadastro.php">É novo por aqui? Cadastre-se!</a>
                         </form>
                     </div>
                 </div>

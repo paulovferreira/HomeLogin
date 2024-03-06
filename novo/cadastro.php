@@ -66,14 +66,14 @@
                                     <input name="senha" class="input is-large" type="password" placeholder="Senha">
                                 </div>
                             </div>
-                             <div class="field">
+                            <!-- <div class="field">
                                 <div class="control">
                                     <select id="perfil" class="input is-large" name="perfil">
                                         <option value="ADMIN">Admin</option>
                                         <option value="USER">Usuário</option>
                                     </select>
                                 </div> 
-                            </div>
+                            </div> -->
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
                         </form>
                     </div>
